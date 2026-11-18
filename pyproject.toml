@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexas-switch-toolkit"
+version = "1.2.0"
+description = "Universal NeXAS Engine Cross-Platform Porter for Nintendo Switch"
+readme = "README.md"
+authors = [{ name = "NeXAS Porting Team" }]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = [
+    "zstandard>=0.22.0",
+    "pillow>=10.0.0"
+]
+
+[project.scripts]
+nexas-tool = "nexas_toolkit.cli:main"
